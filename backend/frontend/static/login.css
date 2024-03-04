@@ -75,7 +75,9 @@ nav {
 .form-check {
     margin-bottom: 15px;
 }
-
+input{
+  height: 40px;
+}
 /* Style the submit button */
 .btn-success {
     background-color: #28a745;
@@ -149,6 +151,7 @@ nav {
     max-width: 300px;
     margin: 4px;
     
+    max-height: 200px;
   
     margin-left: 37px;
     border-width: 2px;
