@@ -1,0 +1,74 @@
+body{
+    background-color: #12131A;
+    color: white;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav {
+    background: linear-gradient(to right, black, grey);
+    border: 5px solid black;
+    border-radius: 60px;
+    height: 100px;
+    width: 95%;
+    margin-top: 30px;
+    margin-left: 35px;
+    box-shadow: 1000px;
+    display: flex;
+}
+.title{
+    margin-left: 80px;  
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+}
+.t1{
+    color: white;
+}
+.t2 {
+    margin-left: 10px;
+    color: #ff8f00;
+    text-decoration: underline;
+    font-style: italic;
+  
+}
+
+.home {
+    margin-left: 400px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aboutus,
+.service,
+.contact {
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0%;
+}
+.service-tab{
+    margin-top: 100px;
+}
+.service-img{
+    /* border: 3px solid wheat; */
+    width: 1200px;
+    height: 400px;
+    margin-left: 100px;
+    margin-bottom: 60px
+    
+}
+.ser-tab{
+    display: flex;
+    margin-left: 30px;
+}
+.ser1,.ser2,.ser3,.ser4{
+    border: 3px solid orange;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    max-width:600px ;
+    border-radius: 30px;
+}

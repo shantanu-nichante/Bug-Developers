@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'service.css' %}">
+    <title>Document</title>
+</head>
+<body> <div class='App'>
+    <div class="nav">
+        <div class="title">
+            <h1 class='t1'>AGILITY</h1>
+            <h1 class='t2'>ATLAS</h1>
+        </div>
+        <a href="{% url 'index' %}" class="home" style="text-decoration: none; color: white; font-size: 24px;">Home</a>
+        <a href="{% url 'about' %}" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
+        <a href="{% url 'service' %}" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
+        <a href="{% url 'contact' %}" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
+    </div>
+    <div>
+
+    <!-- sevice -->
+    <div class="service-tab" id="service">
+        <h1 style="text-align: center;">Our Services</h1>
+        <img src="{% static 'images/plant.jpg' %}" alt="age" class="service-img">
+        <div class="ser-tab">
+            <div class="ser1">
+                <img src="{% static 'images/plant.jpg' %}" alt="age" width="200px" class="ser-img">
+                <h1>Accurate Plant Identification</h1>
+                <p>Utilizing advanced Image Processing and Machine Learning, our software ensures precise identification
+                    of medicinal plants and raw materials, eliminating the risk of misidentification in the supply chain
+                </p>
+            </div>
+            <div class="ser2">
+                <img src="{% static 'images/plant.jpg' %}" alt="age" width="200px" class="ser-img">
+                <H1>Quality Assurance Verification</H1>
+                <p>Implementing a robust quality assurance system to verify the purity and quality of medicinal plant
+                    raw materials, providing assurance to manufacturers, wholesalers, and distributors</p>
+            </div>
+        </div>
+        <div class="ser-tab">
+            <div class="ser3">
+                <img src="{% static 'images/plant.jpg' %}" alt="age" width="200px" class="ser-img">
+                <h1>Supply Chain Integrity</h1>
+                <p>Enhancing supply chain integrity by offering a reliable tool for authenticating and tracing the
+                    origin of medicinal plant resources, ensuring transparency and reliability for stakeholders</p>
+            </div>
+            <div class="ser4">
+                <img src="{% static 'images/plant.jpg' %}" alt="age" width="200px" class="ser-img">
+                <h1>Educational Support</h1>
+                <p>Serving as an educational tool for professionals and students in the Ayurvedic pharmaceutical sector,
+                    facilitating learning about medicinal plant morphology and attributes for improved knowledge and
+                    expertise</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
