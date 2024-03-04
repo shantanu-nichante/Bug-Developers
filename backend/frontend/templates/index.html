@@ -1,13 +1,17 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <title>Agility Atlas</title>
 </head>
+
 <body>
     <div class='App'>
         <div class="nav">
@@ -39,26 +43,93 @@
                                     effectively.
                                 </p>
                                 <div class="btn-dumb">
-                                    <a href="login" class="start-btn">Get Started !</a>
+                                    <a href="login" class="start-btn">Get Started </a>
                                     <div>
-                                        <img src="{% static 'images/dumbell.jpg' %}" alt="age" width="500px" class="dumb-img">
+                                        <img src="{% static 'images/dumbell.jpg' %}" alt="age" width="500px"
+                                            class="dumb-img">
                                     </div>
                                 </div>
                             </div>
                         </container>
                     </div>
 
-                    <div >
+                    <div>
                         <img src="{% static 'images/plant.jpg' %}" alt="age" width="400px" class="plant-img">
                     </div>
                 </section>
             </div>
         </div>
     </div>
+
+    </div>
     <div class="about-container">
-        
+        <h1>About Us</h1>
+        <section class="mis-vis">
+
+        <div>
+            <h1>Mission</h1>
+            <p>To revolutionize Ayurvedic Pharmaceutics by developing innovative solutions for the accurate identification of medicinal plants and raw materials through advanced Image Processing and Machine Learning Algorithms. Our mission is to address the challenges of misidentification, adulteration, and substitution in the medicinal plant industry, ensuring the supply chain integrity and fostering trust in the curative potential of traditional medicine.</p>
+        </div>
+        <div>
+            <h1>Vision</h1>
+            <p>We envision a future where the identification of medicinal plants and raw materials is seamless and accurate, contributing to the preservation of India's rich floral diversity. Our vision is to empower stakeholders in the Ayurvedic pharmaceutical industry, from collectors and traders to wholesalers and distributors, with a cutting-edge software solution. By leveraging technology, we aim to enhance the sustainability of medicinal plant resources, eliminate malpractices, and promote the growth of the MedTech/BioTech/HealthTech sector in India. Our commitment lies in creating a positive impact on the healthcare industry, fostering a harmonious coexistence between traditional wisdom and modern technology.</p>
+        </div>
+                    
+    </section>
+    <section class="tar-core">
+        <div>
+            <h1>Target Market</h1>
+            <p>
+                The target market for the software includes Ayurvedic pharmaceutical companies, wholesalers, distributors, MedTech/BioTech/HealthTech sector, herbal extract manufacturers, research institutions, government agencies, ethical harvesters, and educational institutes in India. The software addresses the challenge of misidentification, adulteration, and substitution of medicinal plants, ensuring authenticity and quality across the supply chain.</p>
+        </div>
+        <div>
+            <h1>Core Values</h1>
+            <div>
+                <img src="" alt="">
+                <h3>Integrity</h3>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Innovation</h3>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Sustainability</h3>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Collaboration</h3>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Impact</h3>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div class="service">
+
     </div>
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var gallerySwiper = new Swiper('#imageGallery', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+
 </body>
+
 </html>

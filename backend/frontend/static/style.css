@@ -2,6 +2,7 @@
 body{
     background-color: #12131A;
 }
+
 .nav {
     background: linear-gradient(to right, black, grey);
     border: 5px solid black;
@@ -48,12 +49,7 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
-.aboutus{
-    
-}
-.welcome-container {
-    /* Add your Welcome container styles here */
-}
+
 
 .title-img {
     width: 700px;
@@ -95,5 +91,20 @@ body{
     margin-top: 20px;
 }
 .btn-dumb{
+    display: flex;
+}
+
+.first{
+    display: flex;
+    flex-direction: column  ;
+}
+.about-container{
+    background-color: gray;
+
+}
+.mis-vis{
+    display: flex;
+}
+.tar-core{
     display: flex;
 }
