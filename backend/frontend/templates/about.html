@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'about.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class='App'>
+        <div class="nav">
+            <div class="title">
+                <h1 class='t1'>AGILITY</h1>
+                <h1 class='t2'>ATLAS</h1>
+            </div>
+            <a href="{% url 'index' %}" class="home" style="text-decoration: none; color: white; font-size: 24px;">Home</a>
+            <a href="{% url 'about' %}" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
+            <a href="{% url 'service' %}" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
+            <a href="{% url 'contact' %}" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
+        </div>
+        <div>
+    
+    <div class="about-container" id="about">
+        <h1>About Us</h1>
+        <section class="mis-vis">
+
+            <div class="mission">
+                <h1 class="head">Mission</h1>
+                <p>To revolutionize Ayurvedic Pharmaceutics by developing innovative solutions for the accurate
+                    identification of medicinal plants and raw materials through advanced Image Processing and Machine
+                    Learning Algorithms. Our mission is to address the challenges of misidentification, adulteration,
+                    and substitution in the medicinal plant industry, ensuring the supply chain integrity and fostering
+                    trust in the curative potential of traditional medicine.</p>
+            </div>
+            <div class="vision">
+                <h1 class="head">Vision</h1>
+                <p>We envision a future where the identification of medicinal plants and raw materials is seamless and
+                    accurate, contributing to the preservation of India's rich floral diversity. Our vision is to
+                    empower stakeholders in the Ayurvedic pharmaceutical industry, from collectors and traders to
+                    wholesalers and distributors, with a cutting-edge software solution. By leveraging technology, we
+                    aim to enhance the sustainability of medicinal plant resources, eliminate malpractices, and promote
+                    the growth of the MedTech/BioTech/HealthTech sector in India. Our commitment lies in creating a
+                    positive impact on the healthcare industry, fostering a harmonious coexistence between traditional
+                    wisdom and modern technology.</p>
+            </div>
+        </section>
+        <section class="tar-core">
+            <div class="core">
+                <h1 style="text-align: center;" class="head">Core Values</h1>
+                <div style="display: flex; margin:50px;">
+                    <div>
+                        <img src="{% static 'images/plant.jpg' %}" alt="age" width="100px"
+                            style="border-radius: 50%; margin-left: 30px;">
+                        <h3>Integrity</h3>
+                    </div>
+                    <div>
+                        <img src="{% static 'images/plant.jpg' %}" alt="age" width="100px"
+                            style="border-radius: 50%; margin-left: 30px;">
+                        <h3>Innovation</h3>
+                    </div>
+                    <div>
+                        <img src="{% static 'images/plant.jpg' %}" alt="age" width="100px"
+                            style="border-radius: 50%;margin-left: 30px;">
+
+                        <h3>Sustainability</h3>
+                    </div>
+                    <div>
+                        <img src="{% static 'images/plant.jpg' %}" alt="age" width="100px"
+                            style="border-radius: 50%;margin-left: 30px;">
+
+                        <h3>Collaboration</h3>
+                    </div>
+                    <div>
+                        <img src="{% static 'images/plant.jpg' %}" alt="age" width="100px"
+                            style="border-radius: 50%; margin-left: 20px;">
+
+                        <h3>Impact</h3>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="target">
+                    <h1 class="head">Target Market</h1>
+                    <p>
+                        The target market for the software includes Ayurvedic pharmaceutical companies, wholesalers,
+                        distributors, MedTech/BioTech/HealthTech sector, herbal extract manufacturers, research
+                        institutions,
+                        government agencies, ethical harvesters, and educational institutes in India. The software
+                        addresses the
+                        challenge of misidentification, adulteration, and substitution of medicinal plants, ensuring
+                        authenticity and quality across the supply chain.</p>
+                </div>
+
+        </section>
+    </div>
+</body>
+</html>
