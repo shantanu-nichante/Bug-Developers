@@ -114,3 +114,13 @@ class Signup (View):
         return error_message
 def home(request):
     return render(request,'home.html')
+
+
+def about(request):
+    return render(request,'about.html')
+
+def service(request):
+    return render(request,'service.html')
+
+def contact(request):
+    return render(request,'contact.html')
