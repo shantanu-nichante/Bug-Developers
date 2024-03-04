@@ -1,40 +1,12 @@
 /* login.css */
 /* Style the entire form container */
-nav {
-    position: absolute;
-    
-    top: 500px;
-    width: 50%;
-    padding-top: 100px;
-    
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#email{
-    padding-top: 5px;
-}
-
-
-.background {
-
-    /* background-image: url('./images/background.jpg'); */
-    background-color: #13141A;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    height: 100%;
-    filter: blur(8px);
-
-}
-
-.Email {
-    max-width: 100px;
-    margin: auto;
-    padding: 20px;
-    padding-top: 200px;
-}
-
 .form_background {
     border: 5px solid;
     border-radius: 30px;
+   
 }
 
 .form_background {
@@ -44,14 +16,10 @@ nav {
     top: 30%;
     width: 50%;
     background-color: white;
-    margin-left: 150px;
+    margin-left: 100px;
     max-width: 400px;
-   
-
     border: 10px solid;
-
-
-
+    height: 430px;
 }
 
 
@@ -84,55 +52,7 @@ input{
     color: #fff;
 }
 
-/* Style the signup link */
-/* a {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    color: #007bff;
-    text-decoration: none;
-} */
 
-.nav {
-    background: linear-gradient(to right, black, grey);
-    border: 5px solid black;
-    border-radius: 60px;
-    height: 100px;
-    width: 95%;
-    margin-top: 30px;
-    margin-left: 35px;
-    box-shadow: 1000px;
-    display: flex;
-    color: white;
-}
-
-.t1 {
-    color: white;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.t2 {
-    margin-left: 10px;
-    color: #ff8f00;
-    text-decoration: underline;
-    font-style: italic;
-}
-
-.home {
-    margin-left: 750px;
-    padding: 30px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.aboutus,
-.service,
-.contact {
-    padding: 30px;
-    font-size: 20px;
-    font-weight: 600;
-}
 
 #login{
     max-width: 100px;
@@ -158,4 +78,57 @@ input{
     border-color: #13141A;
     border-radius: 12px;
    
+}
+body{
+    background-color: #12131A;
+    
+}
+
+.nav {
+    background: linear-gradient(to right, black, grey);
+    border: 5px solid black;
+    border-radius: 60px;
+    height: 100px;
+    width: 95%;
+    margin-top: 30px;
+    margin-left: 35px;
+    box-shadow: 1000px;
+    display: flex;
+}
+
+.title {
+    margin-left: 80px;  
+    font-size: 20px;
+    font-weight: 600;
+    display: flex; 
+    margin-top: 20px; 
+}
+.main{
+    display: flex;
+}
+.t1{
+    color: white;
+}
+.t2 {
+    margin-left: 10px;
+    color: #ff8f00;
+    text-decoration: underline;
+    font-style: italic;
+  
+}
+
+.home {
+    margin-left: 400px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aboutus,
+.service,
+.contact {
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0%;
 }
