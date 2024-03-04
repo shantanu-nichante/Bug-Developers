@@ -19,7 +19,8 @@
                 <h1 class='t1'>AGILITY</h1>
                 <h1 class='t2'>ATLAS</h1>
             </div>
-            <a href="{% url 'index' %}" class="home" style="text-decoration: none; color: white; font-size: 24px;">Home</a>
+            <a href="{% url 'index' %}" class="home"
+                style="text-decoration: none; color: white; font-size: 24px;">Home</a>
             <a href="#about" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
             <a href="#service" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
             <a href="#contact" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
@@ -174,7 +175,7 @@
         </div>
         <div class="cont-detail">
             <div style="display: flex; margin-top: 20px;">
-                <img  style="margin-top: 20px;" src="{% static 'images/loc.png' %}" alt="age" width="70px" height="70px">
+                <img style="margin-top: 20px;" src="{% static 'images/loc.png' %}" alt="age" width="70px" height="70px">
                 <div style="margin-left: 20px;">
                     <h1>Address</h1>
                     <p>Yeshwentrao chavan college of engineering</p>
@@ -182,7 +183,8 @@
             </div>
 
             <div style="display: flex; margin-top: 20px;">
-                <img src="{% static 'images/phone.png' %}" alt="age" width="70px" height="70px" class="" style="margin-top: 20px;">
+                <img src="{% static 'images/phone.png' %}" alt="age" width="70px" height="70px" class=""
+                    style="margin-top: 20px;">
                 <div style="margin-left: 20px;">
                     <h1>Phone Number</h1>
                     <p>+91-8719671717</p>
@@ -205,22 +207,22 @@
         </div>
     </div>
     </div>
- 
+
     <script src="app.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    // Add smooth scrolling to all links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+            // Add smooth scrolling to all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
             });
         });
-    });
-});
 
     </script>
 

@@ -6,7 +6,6 @@
 .form_background {
     border: 5px solid;
     border-radius: 30px;
-   
 }
 
 .form_background {
@@ -19,7 +18,7 @@
     margin-left: 100px;
     max-width: 400px;
     border: 10px solid;
-    height: 430px;
+    height: 500px;
 }
 
 
@@ -132,3 +131,4 @@ body{
     font-weight: 600;
     margin: 0%;
 }
+

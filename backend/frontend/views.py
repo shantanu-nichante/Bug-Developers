@@ -45,7 +45,7 @@ class Login(View):
             error_message = 'Invalid !!'
 
         print (email, password)
-        return render (request, 'base.html', {'error': error_message})
+        return render (request, 'login.html', {'error': error_message})
 
 def logout(request):
     request.session.clear()
@@ -81,7 +81,7 @@ class Signup (View):
             print (first_name, last_name, phone, email, password)
             customer.password = make_password (customer.password)
             customer.register ()
-            return redirect ('homepage')
+            return redirect ('home')
         else:
             data = {
                 'error': error_message,

@@ -1,0 +1,93 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #13141A;
+}
+.nav {
+    background: linear-gradient(to right, black, grey);
+    border: 5px solid black;
+    border-radius: 60px;
+    height: 100px;
+    width: 95%;
+    margin-top: 30px;
+    margin-left: 35px;
+    box-shadow: 1000px;
+    display: flex;
+}
+
+.title {
+    margin-left: 80px;  
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+}
+.main{
+    display: flex;
+}
+.t1{
+    color: white;
+}
+.t2 {
+    margin-left: 10px;
+    color: #ff8f00;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.home {
+    margin-left: 350px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aboutus,
+.service,
+.contact {
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0%;
+}
+section{
+    display: flex;
+    margin-left: 12%;
+    margin-top: 60px;
+}
+.image-recg{
+    width: 250px;
+    color: white;
+    border: 3px solid #ff8f00;
+    border-radius: 30px;
+    padding: 30px;
+    justify-content: center;
+    margin-left: 40px;
+}
+.info,.disease{
+    width: 250px;
+    color: white;
+    border: 3px solid #ff8f00;
+    border-radius: 30px;
+    padding: 30px;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+button{
+    background-color: #ff8f00;
+    padding: 10px;
+    font-size: large;
+    font-weight: 700;
+    margin-left: 40px;
+}
+h1{
+    color: tomato;
+    margin-left: 20px;
+}
+img{
+    margin-left: 20px;
+}
+p{
+    text-align: center;
+}
