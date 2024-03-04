@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <style>.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    
+    .box {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        width: 60%;
+        max-width: 600px; /* Limit the maximum width */
+    }
+    
+    .box h2 {
+        color: black;
+        text-align: center;
+    }
+    
+    .box p, .box ul {
+        color: black;
+        text-align: justify;
+    }
+    
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .box ul li {
+        margin-left: 20px; /* Add some margin for better readability */
+    }
+    </style>
+</head>
+<body>
+    <div class='App'>
+        <div class="nav">
+            <div class="title">
+                <h1 class='t1'>AGILITY</h1>
+                <h1 class='t2'>ATLAS</h1>
+            </div>
+            <a href="{% url 'index' %}" class="home" style="text-decoration: none; color: white; font-size: 24px;">Home</a>
+            <a href="{% url 'about' %}" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
+            <a href="{% url 'service' %}" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
+            <a href="{% url 'contact' %}" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
+        </div>
+
+
+    </div>
+    
+    
+    
+    <div class="container">
+        <div class="box">
+            <h2>Skin Disorders</h2>
+            <p>Ayurvedic treatment for skin disorders focuses on promoting healthy skin, reducing inflammation, and addressing underlying causes such as imbalanced doshas or toxins. It typically includes herbal remedies, topical applications, dietary changes, and lifestyle modifications to improve skin health and appearance.</p>
+            <p>Some commonly used medicinal herbs for skin disorders include:</p>
+            <ul>
+                <li>Neem</li>
+                <li>Turmeric</li>
+                <li>Aloe Vera</li>
+                <li>Manjistha</li>
+                <li>Triphala</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+    

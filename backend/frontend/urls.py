@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from .views import base,Signup,Login,home,index,about,service,contact
+   
+from .views import base,Signup,Login,home,index,about,service,contact,medicine,arthritis,Asthma,Diabetes,Hypertension,Digestive,Anxiet,Skin,Insomnia,Obesity,Allergies
 
 
 urlpatterns = [
@@ -28,5 +29,17 @@ urlpatterns = [
     path('about',about, name='about'),
     path('service',service, name='service'),
     path('contact',contact, name='contact'),
+    path('arthritis',arthritis,name='arthritis'),
+    path('Asthma',Asthma,name='Asthma'),
+     path('Anxiet',Anxiet,name='Anxiet'),
+    path('Diabetes',Diabetes,name='Diabetes'),
+    path('Hypertension',Hypertension,name='Hypertension'),
+    path('Digestive',Digestive,name='Digestive'),
+    
+    path('Skin',Skin,name='Skin'),
+    path('Insomnia',Insomnia,name='Insomnia'),
+    path('Obesity',Obesity,name='Obesity'),
+    path('Allergies',Allergies,name='Allergies'),
+    path('medicine',medicine,name='medicine'),
 
 ]

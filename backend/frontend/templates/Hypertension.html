@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <style>.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    
+    .box {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        width: 60%;
+        max-width: 600px; /* Limit the maximum width */
+    }
+    
+    .box h2 {
+        color: black;
+        text-align: center;
+    }
+    
+    .box p, .box ul {
+        color: black;
+        text-align: justify;
+    }
+    
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .box ul li {
+        margin-left: 20px; /* Add some margin for better readability */
+    }
+    </style>
+</head>
+<body>
+    <div class='App'>
+        <div class="nav">
+            <div class="title">
+                <h1 class='t1'>AGILITY</h1>
+                <h1 class='t2'>ATLAS</h1>
+            </div>
+            <a href="{% url 'index' %}" class="home" style="text-decoration: none; color: white; font-size: 24px;">Home</a>
+            <a href="{% url 'about' %}" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
+            <a href="{% url 'service' %}" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
+            <a href="{% url 'contact' %}" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Hypertension</h2>
+            <p>Ayurvedic treatment for hypertension focuses on lowering high blood pressure, improving cardiovascular health, and reducing the risk of complications associated with hypertension. It typically includes herbal remedies, dietary changes, lifestyle modifications, and stress management techniques to manage hypertension effectively.</p>
+            <p>Some commonly used medicinal herbs for hypertension include:</p>
+            <ul>
+                <li>Garlic</li>
+                <li>Arjuna</li>
+                <li>Hawthorn</li>
+                <li>Brahmi (Gotu Kola)</li>
+                <li>Shankhpushpi (Convolvulus pluricaulis)</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    

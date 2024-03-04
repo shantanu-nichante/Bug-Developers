@@ -124,3 +124,38 @@ def service(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def medicine(request):
+    return render(request,'medicine.html')
+def arthritis(request):
+    return render(request,'artritis.html')
+def Asthma(request):
+    return render(request,'Asthma.html')
+
+
+def Anxiet(request):
+    return render(request,'Anxiet.html')
+
+def Diabetes(request):
+    return render(request,'Diabetes.html')
+
+def Hypertension(request):
+    return render(request,'Hypertension.html')
+
+def Digestive(request):
+    return render(request,'Digestive.html')
+
+def Skin(request):
+    return render(request,'Skin.html')
+
+def Insomnia(request):
+    return render(request,'Insomnia.html')
+
+def Obesity(request):
+    return render(request,'Obesity.html')
+
+def Allergies(request):
+    return render(request,'Allergies.html')
+
+def Obesity(request):
+    return render(request,'Obesity.html')
