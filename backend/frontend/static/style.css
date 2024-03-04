@@ -71,26 +71,25 @@ body{
     color: white;
 }
 
-.plant-img {
-    margin-top: 60px;
+.plant-img{
+    margin-top: 50px;
     margin-left: 100px;
-    width: 300px;
-    height: 200px;
 }
 
 .start-btn {
     text-decoration: underline;
     border: 1px solid #ff8f00;
     background-color: #ff8f00;
-    padding: 14px;
+    padding: 20px;
     color: black;
-    width: 240px;
-    height: 60px;
-    font-weight: 600;
+    width: 150px;
+    height: 30px;
+    font-weight: 900;
     margin-left: 120px;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 24px;
 }
+
 .dumb-img{
     margin-left: 20%    ;
     margin-top: 20px;
