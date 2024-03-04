@@ -8,7 +8,7 @@ body{
     border-radius: 60px;
     height: 100px;
     width: 95%;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 35px;
     box-shadow: 1000px;
     display: flex;
@@ -16,9 +16,8 @@ body{
 }
 
 .title {
-    margin-left: 80px;
-    padding: 25px;
-    font-size: 30px;
+    margin-left: 80px;  
+    font-size: 20px;
     font-weight: 600;
     display: flex;
 }
@@ -38,7 +37,7 @@ body{
 .home {
     margin-left: 500px;
     padding: 30px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -46,10 +45,12 @@ body{
 .service,
 .contact {
     padding: 30px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
-
+.aboutus{
+    
+}
 .welcome-container {
     /* Add your Welcome container styles here */
 }
