@@ -1,86 +1,99 @@
-{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'signup.css' %}">
 
-
-{% block content %}
-
-<div class="container mt-4">
+</head>
+<body>
+    <div class="nav">
+        <div class="title">
+            <h1 class='t1'>AGILITY</h1>
+            <h1 class='t2'>ATLAS</h1>
+        </div>
+        <h1 class="home">Home</h1>
+        <h1 class="aboutus">About Us</h1>
+        <h1 class="service">Service</h1>
+        <h1 class="contact">Contact</h1>
+    </div>
+    <div>
     
     <div class="p-3 m-3">
-
         
         <div class="col-lg-5 rounded mx-auto border pt-4">
-            <div class="text-center col">
-            
-                <img
-                src="https://th.bing.com/th/id/Rd51d7c0fde6d96a31538a86cbd57f3c0?rik=%2fTJxRkU2V371QQ&riu=http%3a%2f%2ftechnologyend.com%2fwp-content%2fuploads%2f2015%2f11%2fwhy-shop-online.jpg&ehk=v1KiYT0i5U1ABCRueDSdLqnazh2BdlVD89Z4qXE0Kgs%3d&risl=&pid=ImgRaw" alt=""
-                class="" style="height: 150px;">
-            <!-- <hr> -->
-            <hr>
-            </div>
-            <h3 class="alert alert-success rounded-pill" style="text-align:center">Create an Account</h3>
-            <form action="/signup" method="POST">
-                
+          
+            <form action="/signup" method="POST" class="form">
+        
+                    <h3 class="alert alert-success rounded-pill" id="cr-acc">Create an Account</h3>
+                    
                 {% csrf_token %}
-
+    
                 {% if error%}
                 <div class="alert alert-danger" role="alert">
                     {{error}}
                 </div>
                 {% endif %}
+                <div class="form-det">
                 <!-- firstname -->
-                <div class="form-group">
-                    <label for="">First Name</label>
+                <div class="form-group" id="form-field">
+                    <label for="" >First Name</label>
+                    <br>
                     <input type="text" name="firstname"
                      id="" value="{{values.first_name}}" class="form-control form-control-sm" 
                      placeholder="">
                 </div>
-
+    <br>
                 <!-- last name -->
                 <div class="form-group">
                     <label for="">Last Name</label>
+                    <br>
                     <input type="text" name="lastname" 
                     id="" value="{{values.last_name}}" class="form-control form-control-sm"
                     >
                 </div>
-
+    <br>
                 <!-- phone -->
                 <div class="form-group">
                     <label for="">Phone</label>
+                    <br>
                     <input type="text" name="phone" 
                     id="" class="form-control form-control-sm"
                     value="{{values.phone}}"
                     placeholder="9876543210"
                     >
                 </div>
+                <br>
                 <!-- email -->
                 <div class="form-group">
                     <label for="">Email</label>
+                    <br>
                     <input required type="email" name="email" id=""
                     value="{{values.email}}" 
                     class=" form-control-sm form-control" placeholder="abc@gmail.com">
                 </div>
-
-
+                <br>
                 <!-- password -->
                 <div class="form-group">
                     <label for="">Password</label>
+                    <br>
                     <input type="password" 
                     name="password" 
                     id=""
                      class="form-control form-control-sm">
                 </div>
-
-                <!--Checkme button-->
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label d-grid gap-2" for="exampleCheck1">Check me out</label>
-                </div>
-                <hr>
-                <button type="submit" class="btn btn-sm btn-success col-lg-12">Create an account</button>
-
-            </form>
+                <br>
+                <button type="submit" class="btn btn-sm btn-success col-lg-12" id="signup-btn">Create an account</button>
+                <p>Already have an account?<a href="login">login</a></p>
+            </div>
+        </form>
         </div>
     </div>
-</div>
+    </div>
+    
+</body>
+</html>
+<div class="container mt-4">
 
-{% endblock %}

@@ -1,0 +1,88 @@
+.form {
+    background: white;
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 50px;
+    height: 500px;
+    border-radius: 30px;
+    font-weight: 900;
+}
+
+input{
+    padding: 5px;
+    width: 250px;
+}
+
+.form-det {
+    margin-left: 10px;
+    text-align: center;
+}
+
+body {
+    background-color: #12131A;
+    color: black;
+}
+
+.nav {
+    background: linear-gradient(to right, black, grey);
+    border: 5px solid black;
+    border-radius: 60px;
+    height: 100px;
+    width: 95%;
+    margin-top: 30px;
+    margin-left: 35px;
+    box-shadow: 1000px;
+    display: flex;
+    color: white;
+}
+
+.title {
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+}
+
+.main {
+    display: flex;
+}
+
+.t1 {
+    color: white;
+}
+
+.t2 {
+    margin-left: 10px;
+    color: #ff8f00;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.home {
+    margin-left: 500px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aboutus,
+.service,
+.contact {
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#cr-acc {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: blue;
+    font-weight: 900;
+}
+#signup-btn{
+    background-color: greenyellow;
+    padding: 10px;
+    font-weight: 700;
+    border: #ff8f00;
+}

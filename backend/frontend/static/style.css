@@ -182,8 +182,9 @@ h3{
 .contact-tab{
     display: flex;
     border: 3px solid #ff8f00;
-    margin-top: 100px;
-    max-width: 90%;
+    margin-top: 80px;
+    height: 400px;
+    width: 1300px;
     margin-left: 50px;
     padding-bottom: 20px;
 }
@@ -193,6 +194,6 @@ h3{
     margin-left: 30px;
 }
 .cont-detail{
-    margin-left: 300px;
-
+    margin-left: 400px;
+    font-size: small;
 }
