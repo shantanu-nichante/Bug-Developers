@@ -14,7 +14,6 @@ body{
     margin-left: 35px;
     box-shadow: 1000px;
     display: flex;
-    color: white;
 }
 
 .title {
@@ -37,7 +36,7 @@ body{
 }
 
 .home {
-    margin-left: 500px;
+    margin-left: 400px;
     padding: 30px;
     font-size: 20px;
     font-weight: 600;
@@ -49,6 +48,7 @@ body{
     padding: 30px;
     font-size: 20px;
     font-weight: 600;
+    margin: 0%;
 }
 
 
