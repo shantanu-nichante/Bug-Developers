@@ -1,60 +1,55 @@
-{% extends "base.html" %}
-
-{% block content %}
-
-<div class="container">
-    <div class="p-3 m-3">
-        <div class="col-lg-5 rounded mx-auto border pt-4">
-            <div class="text-center col">
-            
-                <img
-                src="https://th.bing.com/th/id/Rd51d7c0fde6d96a31538a86cbd57f3c0?rik=%2fTJxRkU2V371QQ&riu=http%3a%2f%2ftechnologyend.com%2fwp-content%2fuploads%2f2015%2f11%2fwhy-shop-online.jpg&ehk=v1KiYT0i5U1ABCRueDSdLqnazh2BdlVD89Z4qXE0Kgs%3d&risl=&pid=ImgRaw" alt=""
-                class="" style="height: 150px;">
-            <hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Agility Atlas</title>
+</head>
+<body>
+    <div class='App'>
+        <div class="nav">
+            <div class="title">
+                <h1 class='t1'>AGILITY</h1>
+                <h1 class='t2'>ATLAS</h1>
             </div>
-            <h3 class="alert alert-light rounded-pill" style="text-align:center" >Login</h3>
-            <form action="/login" method="POST">
-                
-                {% csrf_token %}
+            <h1 class="home">Home</h1>
+            <h1 class="aboutus">About Us</h1>
+            <h1 class="service">Service</h1>
+            <h1 class="contact">Contact</h1>
+        </div>
+        <div>
+            <div class="welcome-container">
+                <br />
+                <section class="main">
+                    <div class="get_start">
+                        <container>
+                            <div>
+                                <img src="/images/title.jpg" alt="" class="title-img" />
+                                <p class="start-line">
+                                    Experience personalized health guidance and expert fitness
+                                    <br />
+                                    training at Agility Atlas. With tailored programs and expert
+                                    <br />
+                                    coaches, achieve your fitness goals efficiently and
+                                    effectively.
+                                </p>
+                                <div class="flex">
+                                    <button class="start-btn">LET'S START</button>
+                                    <img src="/images/bumbell.jpg" alt="" class="dumbell" />
+                                </div>
+                            </div>
+                        </container>
+                    </div>
 
-                {% if error%}
-                <div class="alert alert-danger" role="alert">
-                    {{error}}
-                </div>
-                {% endif %}
-                <!-- email -->
-                <div class="form-group">
-                    <label for="">Email</label>
-                    <input required type="email" name="email" id=""
-                    value="{{values.email}}" 
-                    class=" form-control-sm form-control" placeholder="abc@gmail.com">
-                </div>
-
-
-                <!-- password -->
-                <div class="form-group">
-                    <label for="">Password</label>
-                    <input type="password" 
-                    name="password" 
-                    id=""
-                     class="form-control form-control-sm" >
-                </div>
-
-                <!--Checkme button-->
-            <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label d-grid gap-2" for="exampleCheck1">Check me out</label>
-                </div>
-                <hr>
-                <button type="submit" class="btn btn-sm btn-success col-lg-12">Login</button>
-                <h1>Dont't have an account </h1>
-                <a href="signup">Signup</a>
-
-
-                
-            </form>
+                    <div class="health-img">
+                        <img src="/images/heart.jpg" alt="" width="400" class="" />
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
-</div>
-
-{% endblock %}
+    <script src="app.js"></script>
+</body>
+</html>
