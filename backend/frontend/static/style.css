@@ -73,8 +73,9 @@ body{
 
 .health-img {
     margin-top: 100px;
-    margin-left: 50px;
-    height: 400px;
+    margin-left: 100px;
+    width: 300px;
+    height: 200px;
 
 }
 
@@ -91,10 +92,10 @@ body{
     margin-top: 15px;
     font-size: 20px;
 }
-
-.dumbell {
-    width: 600px;
-    height: 175px;
-    margin-left: 15%;
-    margin-top: 60px;
+.dumb-img{
+    margin-left: 20%    ;
+    margin-top: 20px;
+}
+.btn-dumb{
+    display: flex;
 }
