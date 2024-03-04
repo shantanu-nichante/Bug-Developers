@@ -124,3 +124,6 @@ def service(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def medicine(request):
+    return render(request,'medicine.html')
