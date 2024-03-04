@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.herb-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+    }
+    
+    .herb-info {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .herb-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    .herb-image img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    .herb-image p {
+        margin-top: 10px;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+</head>
+<body>
+    <div class='App'>
+        <div class="nav">
+            <div class="title">
+                <h1 class='t1'>AGILITY</h1>
+                <h1 class='t2'>ATLAS</h1>
+            </div>
+            <a href="{% url 'index' %}" class="home" style="text-decoration: none; color: white; font-size: 24px;">Home</a>
+            <a href="{% url 'about' %}" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
+            <a href="{% url 'service' %}" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
+            <a href="{% url 'contact' %}" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
+        </div>
+        
+        <div class="herb-container">
+            <!-- Tulsi (Holy Basil) -->
+            <div class="herb">
+                <h2 class="herb-name">Tulsi (Holy Basil)</h2>
+                <div class="herb-info">
+                    <p>Tulsi is considered a sacred plant in Hinduism and is revered for its medicinal properties. It has a strong aroma and is rich in antioxidants.</p>
+                    <h3>Medicinal Uses:</h3>
+                    <ul>
+                        <li>Respiratory disorders</li>
+                        <li>Boosting immunity</li>
+                        <li>Stress relief</li>
+                        <li>Overall well-being</li>
+                    </ul>
+                    <h3>Sources:</h3>
+                    <p>Tulsi can be grown in gardens or obtained from herbal stores.</p>
+                </div>
+                <div class="herb-image">
+                    <img src="tulsi.jpg" alt="Tulsi (Holy Basil)">
+                </div>
+            </div>
+        
+            <!-- Ashwagandha -->
+            <div class="herb">
+                <h2 class="herb-name">Ashwagandha</h2>
+                <div class="herb-info">
+                    <p>Ashwagandha, also known as Indian ginseng, is a popular adaptogenic herb in Ayurveda. It has a bitter taste and is known for its rejuvenating properties.</p>
+                    <h3>Medicinal Uses:</h3>
+                    <ul>
+                        <li>Stress reduction</li>
+                        <li>Improving cognitive function</li>
+                        <li>Boosting energy levels</li>
+                        <li>Enhancing vitality</li>
+                    </ul>
+                    <h3>Sources:</h3>
+                    <p>Ashwagandha supplements are available in various forms such as capsules, powders, and tinctures.</p>
+                </div>
+                <div class="herb-image">
+                    <img src="ashwagandha.jpg" alt="Ashwagandha">
+                </div>
+            </div>
+        
+            <!-- Triphala -->
+            <div class="herb">
+                <h2 class="herb-name">Triphala</h2>
+                <div class="herb-info">
+                    <p>Triphala is a combination of three fruits - Amla (Indian gooseberry), Haritaki, and Bibhitaki. It is known for its cleansing and detoxifying properties.</p>
+                    <h3>Medicinal Uses:</h3>
+                    <ul>
+                        <li>Promoting digestion</li>
+                        <li>Improving bowel movements</li>
+                        <li>Detoxifying the body</li>
+                        <li>Supporting gastrointestinal health</li>
+                    </ul>
+                    <h3>Sources:</h3>
+                    <p>Triphala is available in powder form or as a supplement.</p>
+                </div>
+                <div class="herb-image">
+                    <img src="triphala.jpg" alt="Triphala">
+                </div>
+            </div>
+        
+            <!-- Repeat this structure for each herb -->
+        </div>
+        

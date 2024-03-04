@@ -159,3 +159,12 @@ def Allergies(request):
 
 def Obesity(request):
     return render(request,'Obesity.html')
+
+
+def info(request):
+    return render(request,'info.html')
+
+
+
+def Image(request):
+    return render(request,'Image.html')

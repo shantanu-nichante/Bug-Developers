@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
    
-from .views import base,Signup,Login,home,index,about,service,contact,medicine,arthritis,Asthma,Diabetes,Hypertension,Digestive,Anxiet,Skin,Insomnia,Obesity,Allergies
+from .views import base,Signup,Login,home,index,about,service,contact,medicine,Image,arthritis,Asthma,Diabetes,Hypertension,Digestive,info,Anxiet,Skin,Insomnia,Obesity,Allergies
 
 
 urlpatterns = [
@@ -35,11 +35,13 @@ urlpatterns = [
     path('Diabetes',Diabetes,name='Diabetes'),
     path('Hypertension',Hypertension,name='Hypertension'),
     path('Digestive',Digestive,name='Digestive'),
+    path('Image',Image,name='Image'),
     
     path('Skin',Skin,name='Skin'),
     path('Insomnia',Insomnia,name='Insomnia'),
     path('Obesity',Obesity,name='Obesity'),
     path('Allergies',Allergies,name='Allergies'),
     path('medicine',medicine,name='medicine'),
+    path('info',info,name='info'),
 
 ]
