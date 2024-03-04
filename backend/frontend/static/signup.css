@@ -6,7 +6,7 @@
     width: 400px;
     margin-left: 35%;
     margin-top: 50px;
-    height: 550px;
+    height: 600px;
     border-radius: 30px;
     font-weight: 900;
     
@@ -64,7 +64,7 @@ body {
 }
 
 .home {
-    margin-left: 400px;
+    margin-left: 350px;
     padding: 30px;
     font-size: 20px;
     font-weight: 600;

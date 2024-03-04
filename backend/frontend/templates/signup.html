@@ -34,9 +34,9 @@
                 {% csrf_token %}
     
                 {% if error%}
-                <div class="alert alert-danger" role="alert">
+                <div class="alert alert-danger" style="color: brown; text-align: center; background-color: rgb(229, 145, 145); height: 30px; padding: 5px;" role="alert">
                     {{error}}
-                </div>
+                </div><br>
                 {% endif %}
                 <div class="form-det">
                 <!-- firstname -->
