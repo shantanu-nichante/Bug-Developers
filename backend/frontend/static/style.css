@@ -1,6 +1,7 @@
 /* styles.css */
 body{
     background-color: #12131A;
+    color: white;
 }
 
 .nav {
@@ -99,12 +100,99 @@ body{
     flex-direction: column  ;
 }
 .about-container{
-    background-color: gray;
-
+    background-color: #13141A;
+    color: white;
+    width: 90%;
+    margin-top: 150px;
+    margin-left: 80px;
+    text-align: center;
 }
 .mis-vis{
     display: flex;
 }
 .tar-core{
     display: flex;
+}
+.mission{
+    /* background-color: #ff8f00; */
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    border: 3px solid #ff8f00;
+}
+.vision{
+    /* background-color: darkgoldenrod; */
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    border: 3px solid darkgoldenrod;
+}
+.target{
+    /* background-color: #ef9825; */
+    color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+    border: 3px solid #ef9825;
+
+}
+.core{
+    /* background-color: #905B15; */
+    padding: 20px;
+    border: 3px solid #905B15;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: white;
+    width: 800px;    
+    height: 250px;
+}
+h3{
+    margin-left: 20px;
+
+}
+.head{
+    font-size: 30px;
+}
+.service-tab{
+    margin-top: 100px;
+}
+.service-img{
+    /* border: 3px solid wheat; */
+    width: 1200px;
+    height: 400px;
+    margin-left: 100px;
+    margin-bottom: 60px
+}
+.ser-tab{
+    display: flex;
+    margin-left: 30px;
+}
+.ser1,.ser2,.ser3,.ser4{
+    border: 3px solid orange;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    max-width:600px ;
+    border-radius: 30px;
+}
+.contact-tab{
+    display: flex;
+    border: 3px solid #ff8f00;
+    margin-top: 100px;
+    max-width: 90%;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+.cont{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.cont-detail{
+    margin-left: 300px;
+
 }
