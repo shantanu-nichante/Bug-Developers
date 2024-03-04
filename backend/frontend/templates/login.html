@@ -11,18 +11,18 @@
 <body style="background-color: #13141A;">
 
     <div class='App'>
-        <div class="nav">
-            <div class="title">
-                <h1 class='t1'>AGILITY</h1>
-                <h1 class='t2'>ATLAS</h1>
+        <div class='App'>
+            <div class="nav">
+                <div class="title">
+                    <h1 class='t1'>AGILITY</h1>
+                    <h1 class='t2'>ATLAS</h1>
+                </div>
+                <a href="{% url 'index' %}" class="home" style="text-decoration: none; color: white; font-size: 24px;">Home</a>
+                <a href="{% url 'about' %}" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
+                <a href="{% url 'service' %}" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
+                <a href="{% url 'contact' %}" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
             </div>
-            <a href="{% url 'index' %}" class="home"
-                style="text-decoration: none; color: white; font-size: 24px;">Home</a>
-            <a href="#about" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
-            <a href="#service" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
-            <a href="#contact" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
-        </div>
-        <div>
+            <div>
             {% load static %}
 
             {% block content %}

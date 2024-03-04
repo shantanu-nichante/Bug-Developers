@@ -2,6 +2,9 @@ body{
     background-color: #12131A;
     color: white;
 }
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .nav {
     background: linear-gradient(to right, black, grey);
@@ -12,6 +15,12 @@ body{
     margin-top: 30px;
     margin-left: 35px;
     box-shadow: 1000px;
+    display: flex;
+}
+.title{
+    margin-left: 80px;  
+    font-size: 20px;
+    font-weight: 600;
     display: flex;
 }
 .t1{
@@ -46,7 +55,7 @@ body{
     margin-top: 80px;
     height: 400px;
     width: 1300px;
-    margin-left: 50px;
+    margin-left: 80px;
     padding-bottom: 20px;
 }
 .cont{
