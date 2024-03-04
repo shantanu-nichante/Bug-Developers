@@ -7,6 +7,9 @@ from django.shortcuts import render
 def base(request):
     return render (request,'index.html')
 
+def index(request):
+    return render(request,'index.html')
+
 
 from django.shortcuts import render , redirect , HttpResponseRedirect
 from django.contrib.auth.hashers import  check_password
@@ -110,4 +113,4 @@ class Signup (View):
 
         return error_message
 def home(request):
-    return render(request,"home.html")
+    return render(request,'home.html')
