@@ -14,3 +14,47 @@ body{
     box-shadow: 1000px;
     display: flex;
 }
+.t1{
+    color: white;
+}
+.t2 {
+    margin-left: 10px;
+    color: #ff8f00;
+    text-decoration: underline;
+    font-style: italic;
+  
+}
+
+.home {
+    margin-left: 400px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aboutus,
+.service,
+.contact {
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0%;
+}
+.contact-tab{
+    display: flex;
+    border: 3px solid #ff8f00;
+    margin-top: 80px;
+    height: 400px;
+    width: 1300px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+.cont{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.cont-detail{
+    margin-left: 400px;
+    font-size: small;
+}
