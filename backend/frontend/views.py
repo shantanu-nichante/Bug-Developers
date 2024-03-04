@@ -109,5 +109,5 @@ class Signup (View):
         # saving
 
         return error_message
-def logedin(request):
-    return render(request,'home.html')
+def home(request):
+    return render(request,"home.html")
