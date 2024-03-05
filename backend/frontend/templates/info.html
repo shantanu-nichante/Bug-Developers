@@ -1,45 +1,70 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>.herb-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        margin-top: 20px;
-        margin-left: 20%;
-        margin-right: 20%;
-        text-align: center;
-    }
-    
-    .herb-info {
-        background-color: white;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 20px;
-    }
-    
-    .herb-image {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
-    
-    .herb-image img {
-        max-width: 100%;
-        border-radius: 10px;
-    }
-    
-    .herb-image p {
-        margin-top: 10px;
-    }
+    <style>
+        .herb-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: center;
+            border: 3px solid orange;
+            margin-left: 200px;
+            padding-left: 100px;
+            padding-right: 200px;
+            padding-bottom: 50px;
+            height: fit-content;
+
+        }
+
+        .herb-info {
+            background-color: rgb(204, 191, 110);
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            width: 800px;
+            height: 400px;
+            text-align: center;
+            padding: 30px;
+        
+        }
+
+        .herb-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .herb-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .herb-image p {
+            margin-top: 10px;
+
+        }
+
+        .herb {
+            max-width: 700px;
+        }
+
+        .herb-name {
+            color: white;
+            text-align: center;
+        }
     </style>
     <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
 </head>
+
 <body>
     <div class='App'>
         <div class="nav">
@@ -47,18 +72,24 @@
                 <h1 class='t1'>AGILITY</h1>
                 <h1 class='t2'>ATLAS</h1>
             </div>
-            <a href="{% url 'index' %}" class="home" style="text-decoration: none; color: white; font-size: 24px;">Home</a>
-            <a href="{% url 'about' %}" class="aboutus" style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
-            <a href="{% url 'service' %}" class="service" style="text-decoration: none; color: white; font-size: 24px;">Service</a>
-            <a href="{% url 'contact' %}" class="contact" style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
+            <a href="{% url 'index' %}" class="home"
+                style="text-decoration: none; color: white; font-size: 24px;">Home</a>
+            <a href="{% url 'about' %}" class="aboutus"
+                style="text-decoration: none; color: white; font-size: 24px;">About Us</a>
+            <a href="{% url 'service' %}" class="service"
+                style="text-decoration: none; color: white; font-size: 24px;">Service</a>
+            <a href="{% url 'contact' %}" class="contact"
+                style="text-decoration: none; color: white; font-size: 24px;">Contact</a>
         </div>
-        
+
         <div class="herb-container">
-            <!-- Tulsi (Holy Basil) -->
-            <div class="herb">
-                <h2 class="herb-name">Tulsi (Holy Basil)</h2>
+            <h2 class="herb-name">Tulsi (Holy Basil)</h2>
+            <br>
+            <div class="herb" style="display: flex;">
+                <!-- Tulsi (Holy Basil) -->
                 <div class="herb-info">
-                    <p>Tulsi is considered a sacred plant in Hinduism and is revered for its medicinal properties. It has a strong aroma and is rich in antioxidants.</p>
+                    <p>Tulsi is considered a sacred plant in Hinduism and is revered for its medicinal properties. It
+                        has a strong aroma and is rich in antioxidants.</p>
                     <h3>Medicinal Uses:</h3>
                     <ul>
                         <li>Respiratory disorders</li>
@@ -70,35 +101,45 @@
                     <p>Tulsi can be grown in gardens or obtained from herbal stores.</p>
                 </div>
                 <div class="herb-image">
-                    <img src="tulsi.jpg" alt="Tulsi (Holy Basil)">
+                    <img src="{% static 'images/tulsi.jpg' %}" style="margin-top: 40px;" alt="age" width="900px"
+                        class="tulsi-img">
+
                 </div>
             </div>
-        
+            <br>
             <!-- Ashwagandha -->
             <div class="herb">
                 <h2 class="herb-name">Ashwagandha</h2>
-                <div class="herb-info">
-                    <p>Ashwagandha, also known as Indian ginseng, is a popular adaptogenic herb in Ayurveda. It has a bitter taste and is known for its rejuvenating properties.</p>
-                    <h3>Medicinal Uses:</h3>
-                    <ul>
-                        <li>Stress reduction</li>
-                        <li>Improving cognitive function</li>
-                        <li>Boosting energy levels</li>
-                        <li>Enhancing vitality</li>
-                    </ul>
-                    <h3>Sources:</h3>
-                    <p>Ashwagandha supplements are available in various forms such as capsules, powders, and tinctures.</p>
-                </div>
-                <div class="herb-image">
-                    <img src="ashwagandha.jpg" alt="Ashwagandha">
+                <div style="display: flex;">
+                    <div class="herb-info">
+                        <p>Ashwagandha, also known as Indian ginseng, is a popular adaptogenic herb in Ayurveda. It has
+                            a bitter taste and is known for its rejuvenating properties.</p>
+                        <h3>Medicinal Uses:</h3>
+                        <ul>
+                            <li>Stress reduction</li>
+                            <li>Improving cognitive function</li>
+                            <li>Boosting energy levels</li>
+                            <li>Enhancing vitality</li>
+                        </ul>
+                        <h3>Sources:</h3>
+                        <p>Ashwagandha supplements are available in various forms such as capsules, powders, and
+                            tinctures.</p>
+                    </div>
+                    <div class="herb-image">
+                        <img src="{% static 'images/ashwa.jpg' %}" style="margin-top: 40px;" alt="age" width="900px"
+                            class="tulsi-img">
+
+                    </div>
                 </div>
             </div>
-        
+            <br>
             <!-- Triphala -->
-            <div class="herb">
-                <h2 class="herb-name">Triphala</h2>
+            <h2 class="herb-name">Triphala</h2>
+            <br>
+            <div class="herb" style="display: flex;">
                 <div class="herb-info">
-                    <p>Triphala is a combination of three fruits - Amla (Indian gooseberry), Haritaki, and Bibhitaki. It is known for its cleansing and detoxifying properties.</p>
+                    <p>Triphala is a combination of three fruits - Amla (Indian gooseberry), Haritaki, and Bibhitaki. It
+                        is known for its cleansing and detoxifying properties.</p>
                     <h3>Medicinal Uses:</h3>
                     <ul>
                         <li>Promoting digestion</li>
@@ -110,10 +151,225 @@
                     <p>Triphala is available in powder form or as a supplement.</p>
                 </div>
                 <div class="herb-image">
-                    <img src="triphala.jpg" alt="Triphala">
+                    <img src="{% static 'images/triphala.jpg' %}" style="margin-top: 40px;" alt="age" width="900px"
+                        class="tulsi-img">
+
                 </div>
             </div>
-        
+            
+            <br>
+            <!-- Triphala -->
+            <h2 class="herb-name">Neem</h2>
+            <br>
+            <div class="herb" style="display: flex; ">
+                <div class="herb-info">
+                    <p>Neem, scientifically known as Azadirachta indica, is a tree native to the Indian subcontinent. It
+                        is widely recognized for its medicinal properties and has been used in traditional medicine for
+                        centuries.</p>
+                    <h3>Medicinal Uses:</h3>
+                    <ul>
+                        <li>Antibacterial and antiviral properties</li>
+                        <li>Skin disorders treatment (eczema, psoriasis)</li>
+                        <li>Boosting the immune system</li>
+                        <li>Anti-inflammatory effects</li>
+                    </ul>
+                    <h3>Sources:</h3>
+                    <p>Neem is available in various forms, including neem leaves, neem oil, and neem supplements.</p>
+                </div>
+                <div class="herb-image">
+                    <img src="{% static 'images/neem.jpg' %}" style="margin-top: 40px;" alt="age" width="900px"
+                    class="tulsi-img">
+                </div>
+            </div>
+<br>
+            <!-- Plant 2: Aloe Vera -->
+    <h2 class="herb-name">Aloe Vera</h2>
+    <br>
+    <div class="herb" style="display: flex; ">
+        <div class="herb-info">
+            <p>Aloe Vera is a succulent plant known for its thick, gel-filled leaves. It has been used for centuries for its medicinal and skincare properties.</p>
+            <h3>Medicinal Uses:</h3>
+            <ul>
+                <li>Wound healing and burns</li>
+                <li>Soothing skin irritations</li>
+                <li>Anti-inflammatory effects</li>
+                <li>Digestive support</li>
+            </ul>
+            <h3>Sources:</h3>
+            <p>Aloe Vera gel is commonly extracted from the leaves for use in skincare products and supplements.</p>
+        </div>
+        <div class="herb-image">
+            <img src="{% static 'images/aloe.jpg' %}" style="margin-top: 40px;" alt="age" width="900px"
+            class="tulsi-img">
+        </div>
+    </div>
+    <br>
+    <h2 class="herb-name">Turmeric</h2>
+    <br>
+    <div class="herb" style="display: flex; ">
+        <div class="herb-info">
+            <p>Turmeric, scientifically known as Curcuma longa, is a flowering plant belonging to the ginger family. It is widely used for its culinary and medicinal properties.</p>
+            <h3>Medicinal Uses:</h3>
+            <ul>
+                <li>Anti-inflammatory and antioxidant effects</li>
+                <li>Joint pain and arthritis relief</li>
+                <li>Boosting the immune system</li>
+                <li>Improving digestion</li>
+            </ul>
+            <h3>Sources:</h3>
+            <p>Turmeric is commonly used as a spice in cooking, and turmeric supplements are also available.</p>
+        </div>
+        <div class="herb-image">
+            <img src="{% static 'images/turmeric.jpg' %}" style="margin-top: 40px;" alt="age" width="900px"
+            class="tulsi-img">
+        </div>
+    </div>
+<br>
+<h2 class="herb-name">Ginseng</h2>
+    <br>
+    <div class="herb" style="display: flex; ">
+        <div class="herb-info">
+            <p>Ginseng is a root plant that has been used in traditional medicine for its various health benefits. There are different types of ginseng, including Asian ginseng and American ginseng.</p>
+            <h3>Medicinal Uses:</h3>
+            <ul>
+                <li>Improving energy and reducing fatigue</li>
+                <li>Boosting the immune system</li>
+                <li>Enhancing cognitive function</li>
+                <li>Managing stress</li>
+            </ul>
+            <h3>Sources:</h3>
+            <p>Ginseng supplements are available, and the root can be used in teas and herbal preparations.</p>
+        </div>
+        <div class="herb-image">
+            <img src="{% static 'images/ginserg.jpg' %}" style="margin-top: 40px;" alt="age" width="900px"
+            class="tulsi-img">
+        </div>
+    </div>
+    <br>
+    <h2 class="herb-name">Lavender</h2>
+    <br>
+    <div class="herb" style="display: flex; ">
+        <div class="herb-info">
+            <p>Lavender is a fragrant herb known for its calming and soothing properties. It has been used for centuries in aromatherapy and traditional medicine.</p>
+            <h3>Medicinal Uses:</h3>
+            <ul>
+                <li>Relieving stress and anxiety</li>
+                <li>Improving sleep quality</li>
+                <li>Alleviating headaches and migraines</li>
+                <li>Antibacterial and antifungal properties</li>
+            </ul>
+            <h3>Sources:</h3>
+            <p>Lavender essential oil is commonly used in aromatherapy, and dried lavender can be used in teas and sachets.</p>
+        </div>
+        <div class="herb-image">
+            <img src="{% static 'images/lavender.jpeg' %}" style="margin-top: 40px;" alt="age" width="900px"
+            class="tulsi-img">
+        </div>
+    </div>
+    <br>
+    <h2 class="herb-name">Chamomile</h2>
+    <br>
+    <div class="herb" style="display: flex; ">
+        <div class="herb-info">
+            <p>Chamomile is an herb known for its mild sedative properties and is often used to promote relaxation and sleep. It belongs to the Asteraceae family.</p>
+            <h3>Medicinal Uses:</h3>
+            <ul>
+                <li>Relieving insomnia and promoting sleep</li>
+                <li>Calming digestive issues</li  
+                     <li>Calming digestive issues</li>
+                <li>Reducing inflammation</li>
+                <li>Alleviating symptoms of anxiety</li>
+            </ul>
+            <h3>Sources:</h3>
+            <p>Chamomile is commonly consumed as a tea, and chamomile essential oil is also used in aromatherapy.</p>
+        </div>
+        <div class="herb-image">
+            <img src="{% static 'images/chamo.jpg' %}" style="margin-top: 40px;" alt="chamomile_image" width="900px" class="chamomile-img">
+        </div>
+    </div>
+    <br>
+      <!-- Plant 7: Echinacea -->
+      <h2 class="herb-name">Echinacea</h2>
+      <br>
+      <div class="herb" style="display: flex; ">
+          <div class="herb-info">
+              <p>Echinacea, also known as coneflower, is a flowering plant widely used for its potential immune-boosting properties. It is native to North America.</p>
+              <h3>Medicinal Uses:</h3>
+              <ul>
+                  <li>Strengthening the immune system</li>
+                  <li>Reducing the severity and duration of colds</li>
+                  <li>Anti-inflammatory effects</li>
+                  <li>Wound healing</li>
+              </ul>
+              <h3>Sources:</h3>
+              <p>Echinacea supplements, teas, and tinctures are common forms in which it is consumed.</p>
+          </div>
+          <div class="herb-image">
+              <img src="{% static 'images/echi.jpeg' %}" style="margin-top: 40px;" alt="echinacea_image" width="900px" class="echinacea-img">
+          </div>
+      </div>
+      <br>
+      <h2 class="herb-name">Ginger</h2>
+      <br>
+      <div class="herb" style="display: flex; ">
+          <div class="herb-info">
+              <p>Ginger, scientifically known as Zingiber officinale, is a rhizome with a long history of use in traditional medicine and cooking. It has a distinct spicy flavor.</p>
+              <h3>Medicinal Uses:</h3>
+              <ul>
+                  <li>Alleviating nausea and digestive issues</li>
+                  <li>Anti-inflammatory and antioxidant effects</li>
+                  <li>Reducing muscle pain and soreness</li>
+                  <li>Boosting the immune system</li>
+              </ul>
+              <h3>Sources:</h3>
+              <p>Fresh ginger, ginger tea, and ginger supplements are popular ways to consume ginger for its health benefits.</p>
+          </div>
+          <div class="herb-image">
+              <img src="{% static 'images/ginger.jpg' %}" style="margin-top: 40px;" alt="ginger_image" width="900px" class="ginger-img">
+          </div>
+      </div>
+      <br>
+          <!-- Plant 9: Peppermint -->
+    <h2 class="herb-name">Peppermint</h2>
+    <br>
+    <div class="herb" style="display: flex; ">
+        <div class="herb-info">
+            <p>Peppermint is a hybrid mint that is a cross between watermint and spearmint. It is known for its refreshing flavor and various medicinal properties.</p>
+            <h3>Medicinal Uses:</h3>
+            <ul>
+                <li>Relieving digestive issues and indigestion</li>
+                <li>Reducing headaches and migraines</li>
+                <li>Alleviating symptoms of irritable bowel syndrome (IBS)</li>
+                <li>Antimicrobial effects</li>
+            </ul>
+            <h3>Sources:</h3>
+            <p>Peppermint tea, peppermint oil, and peppermint supplements are common forms of consumption.</p>
+        </div>
+        <div class="herb-image">
+            <img src="{% static 'images/peper.jpg' %}" style="margin-top: 40px;" alt="peppermint_image" width="900px" class="peppermint-img">
+        </div>
+    </div>
+<br>
+<h2 class="herb-name">Rosemary</h2>
+<br>
+<div class="herb" style="display: flex; ">
+    <div class="herb-info">
+        <p>Rosemary is an aromatic herb with needle-like leaves that is commonly used in cooking. It is also known for its potential health benefits.</p>
+        <h3>Medicinal Uses:</h3>
+        <ul>
+            <li>Improving memory and cognitive function</li>
+            <li>Antioxidant and anti-inflammatory effects</li>
+            <li>Enhancing digestion</li>
+            <li>Anti-cancer properties</li>
+        </ul>
+        <h3>Sources:</h3>
+        <p>Rosemary can be used fresh in cooking, and rosemary essential oil is also available for various applications.</p>
+    </div>
+    <div class="herb-image">
+        <img src="{% static 'images/rose.jpeg' %}" style="margin-top: 40px;" alt="rosemary_image" width="900px" class="rosemary-img">
+    </div>
+</div>
+
+        </div>
             <!-- Repeat this structure for each herb -->
         </div>
-        

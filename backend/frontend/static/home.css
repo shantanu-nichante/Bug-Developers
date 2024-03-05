@@ -98,14 +98,15 @@ p{
 .container {
     text-align: center;
     margin-top: 50px;
+ 
 }
 
 .box {
     display: inline-block;
-    background-color: white;
+    background-color: #e3ba85; 
     padding: 20px;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .disease-buttons {
@@ -131,3 +132,5 @@ p{
     background-color: rgb(254, 122, 14);
     color: white;
 }
+
+
